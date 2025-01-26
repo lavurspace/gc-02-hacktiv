@@ -98,10 +98,6 @@ function CuisineDetail() {
 										</p>
 									</div>
 								</div>
-
-								<button className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors">
-									Add to Cart
-								</button>
 							</div>
 						</div>
 					</div>
