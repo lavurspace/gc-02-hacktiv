@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-color: #ff6b6b;
+	--secondary-color: #4ecdc4;
+	--dark-color: #2c3e50;
+	--light-color: #f7f9fc;
+}
+
+.navbar {
+	background-color: #90148a;
+}
+
+@layer base {
+	body {
+		background-color: var(--light-color);
+		font-family: "Inter", system-ui, -apple-system, sans-serif;
+	}
+
+	.navbar {
+		backdrop-filter: blur(10px);
+		background-color: rgba(255, 255, 255, 0.9) !important;
+	}
+
+	.card {
+		transition: transform 0.2s ease-in-out;
+		border: none !important;
+	}
+
+	.card:hover {
+		transform: translateY(-5px);
+	}
+
+	.btn-primary {
+		background-color: var(--primary-color) !important;
+		border-color: var(--primary-color) !important;
+	}
+
+	.btn-outline-primary {
+		color: var(--primary-color) !important;
+		border-color: var(--primary-color) !important;
+	}
+
+	.btn-outline-primary:hover {
+		background-color: var(--primary-color) !important;
+		color: white !important;
+	}
+
+	.text-primary {
+		color: var(--primary-color) !important;
+	}
+
+	.bg-primary {
+		background-color: var(--primary-color) !important;
+	}
+
+	.badge {
+		font-weight: 500 !important;
+		letter-spacing: 0.5px;
+	}
+
+	.card-img-wrapper {
+		position: relative;
+		padding-top: 66.67%; /* 3:2 Aspect Ratio */
+		overflow: hidden;
+	}
+
+	.card-img-wrapper img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.search-bar {
+		background: white;
+		border-radius: 12px;
+		padding: 20px;
+		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+	}
+
+	.hero-section {
+		background: linear-gradient(
+			135deg,
+			var(--primary-color) 0%,
+			var(--secondary-color) 100%
+		);
+		color: white;
+		padding: 80px 0;
+		margin-bottom: 40px;
+		border-radius: 0 0 30px 30px;
+	}
+
+	.price-tag {
+		background-color: var(--primary-color);
+		color: white;
+		padding: 4px 12px;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+
+	.category-badge {
+		background-color: var(--secondary-color);
+		color: white;
+		padding: 4px 12px;
+		border-radius: 20px;
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+}
